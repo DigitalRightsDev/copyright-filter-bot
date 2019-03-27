@@ -135,12 +135,22 @@ img{
   content: '\e0f9';
   color: #009688;
 } /* '' */
+.typcn-social-github:before {
+  content: '\e0e9';
+} /* '' */
 #copyright-bot .typcn-social-twitter:before {
+  left: 0;
   position: relative;
   font-size: 600%;
   text-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 2px 4px rgba(0, 0, 0, .28);
 } /* '' */
-/* '' */
+
+#copyright-bot .typcn-social-github:before {
+  position: relative;
+  text-decoration: none;
+  left: 0;
+  top: 2px;
+}
 
 
 .typcn-mail:before {
@@ -194,30 +204,6 @@ img{
   color: white;
 }
 
-#meme1{
-  opacity:0;
-}
-#meme2{
-  opacity: 0.3;
-}
-
-#meme-upload1, #meme-upload2{
-  text-align: center;
-  width:100%;
-  max-width: 380px;
-  float:right;
-  clear: both;
-  position: relative;
-  padding: 5px 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 2px 4px rgba(0, 0, 0, .28);
-  background: rgba(0, 0, 0, 0.03);
-  color: black;
-  font-style: italic;
-  margin-bottom: 15px;
-  height: 22px;
-}
-
 #computer{
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 2px 4px rgba(0, 0, 0, .28);
@@ -234,23 +220,12 @@ img{
   left: 0;
 }
 
-#meme-upload1 span, #meme-upload2 span{
-  display: none;
-  opacity: 0;
-  font-size: 85%;
-}
-#meme-upload2 span:last-child{
-  display: inline;
-  opacity: 1;
-}
-
-#unmeme1_div, #unmeme2_div{
-  display:none;
-  margin-left:-7777px;
-}
-
-#meme1_div{
-  height: 270px;
+.meme{
+  border-radius: 10px;
+  overflow: hidden;
+  float: right;
+  clear: both;
+  background-color: rgba(0,150,136, 0.4);
 }
 
 .social{
